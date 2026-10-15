@@ -248,10 +248,10 @@
 
                         <div class="relative bg-white rounded-3xl p-7 shadow-xl border border-slate-100 flex flex-col items-center text-center">
                             
-                            <!-- Profile Photo Container -->
+                            <!--  Photo Container -->
                             <div class="relative mb-6 group">
                                 <div class="w-48 h-48 sm:w-56 sm:h-56 rounded-3xl p-2 bg-gradient-to-tr from-amber-400 via-emerald-400 to-amber-200 shadow-md overflow-hidden relative">
-                                    <img id="profile-image-view" src="oh,jpg" alt="오지현 사역자 프로필" class="w-full h-full object-cover object-top rounded-2xl bg-slate-100">
+                                    <img id="profile-image-view" src="oh.jpg" alt="오지현 사역자 프로필" class="w-full h-full object-cover object-top rounded-2xl bg-slate-100">
                                     
                                     <!-- Photo Upload Overlay in Admin Mode -->
                                     <label id="profile-upload-overlay" class="hidden absolute inset-0 bg-slate-900/60 rounded-2xl flex-col items-center justify-center text-white cursor-pointer hover:bg-slate-900/75 transition-all p-4 text-center">
@@ -761,8 +761,8 @@
             document.getElementById('display-location').innerText = currentProfileData.location || "[활동 지역]";
             document.getElementById('display-subheading').innerText = currentProfileData.subheading || "";
 
-            if (currentProfileData.photoUrl) {
-                document.getElementById('profile-image-view').src = currentProfileData.photoUrl;
+            if (currentoh.jgpData.photoUrl) {
+                document.getElementById('oh.jgp-image-view').src = currentProfileData.photoUrl;
             }
 
             if (currentProfileData.prices) {
